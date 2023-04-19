@@ -1,3 +1,11 @@
 from django.contrib import admin
+from main.models import Flight
 
-# Register your models here.
+
+class FlighAdmin(admin.ModelAdmin):
+    pass
+
+
+
+admin.site.register(Flight, FlighAdmin)
+
